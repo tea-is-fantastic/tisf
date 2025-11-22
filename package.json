@@ -1,0 +1,42 @@
+{
+  "name": "tisf",
+  "version": "0.0.9",
+  "description": "Utilities for @tisf scripts",
+  "type": "module",
+  "source": "src/index.js",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.module.js",
+  "unpkg": "./dist/index.umd.js",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "import": "./dist/index.modern.js"
+  },
+  "scripts": {
+    "build": "microbundle --target node --format modern,cjs --no-sourcemap",
+    "dev": "microbundle watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "microbundle": "^0.15.1"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^8.0.1",
+    "cheerio": "^1.0.0-rc.12",
+    "critical": "^7.2.1",
+    "esbuild": "^0.19.0",
+    "handlebars": "^4.7.8",
+    "handlebars-helper-repeat": "^2.0.0",
+    "handlebars-helpers": "^0.10.0",
+    "html-minifier-terser": "^7.2.0",
+    "jsdom": "^27.2.0",
+    "mime-types": "^2.1.35",
+    "purgecss": "^5.0.0",
+    "regexp-tree": "^0.1.27",
+    "replace-in-file": "^8.3.0",
+    "vite": "^7.2.4",
+    "vite-plugin-singlefile": "^2.3.0",
+    "yargs": "^18.0.0"
+  }
+}
